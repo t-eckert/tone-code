@@ -5,16 +5,17 @@ type Props = {
 
 const Input = (props: Props) => {
   return (
-    <div>
+    <section className="input">
       <textarea
         name="tone-code-input"
         id="tone-code-input"
+        placeholder="Type here to create Tone Code"
         value={props.text}
         onChange={(event) => {
           props.updateText(event.target.value);
         }}
       />
-    </div>
+    </section>
   );
 };
 

@@ -11,11 +11,15 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
-      <Input text={text} updateText={updateText} />
-      <Output text={text} />
-      <ColorSelect />
-      <Footer />
+      <div className="interface">
+        <Header />
+        <div className="io">
+          <Input text={text} updateText={updateText} />
+          <Output text={text} />
+        </div>
+        {/* <ColorSelect /> */}
+        <Footer />
+      </div>
     </div>
   );
 };

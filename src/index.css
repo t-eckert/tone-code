@@ -1,13 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap");
+
+:root {
+  --font-stack: "Crimson Text", "Times New Roman", Times, serif;
+  --filled-color: #41464b;
+  --unfilled-color: #d6c5b7;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: var(--font-stack);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+h1 {
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: #fbf2ed;
+}
+
+.interface {
+  display: flex;
+  flex-direction: column;
+  min-width: 40rem;
+}
+
+.io {
+  display: flex;
+  gap: 2rem;
+}
+
+.input {
+  width: 30rem;
+  height: 40rem;
+}
+
+.output {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(40, 1fr);
+  width: 30rem;
+  height: 40rem;
+}
+
+.filled {
+  background-color: var(--filled-color);
+}
+
+.unfilled {
+  background-color: var(--unfilled-color);
+}
+
+#tone-code-input,
+#tone-code-input:focus,
+#tone-code-input:active {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  font-family: var(--font-stack);
 }
