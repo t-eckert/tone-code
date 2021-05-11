@@ -1,7 +1,6 @@
 import Header from "./Header";
 import Input from "./Input";
 import Output from "./Output";
-import ColorSelect from "./ColorSelect";
 import Footer from "./Footer";
 
 import { useState } from "react";
